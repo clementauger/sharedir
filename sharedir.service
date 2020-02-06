@@ -1,0 +1,11 @@
+[Unit]
+Description=sharedir service.
+
+[Service]
+Type=simple
+ExecStart=/path/to/sharedir
+User=User
+WorkingDirectory=/path/to/sharedir/config/and/keys
+
+[Install]
+WantedBy=multi-user.target
